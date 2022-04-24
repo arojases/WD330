@@ -12,6 +12,7 @@ const weeks = [
         url: "week1/index.html"
     }*/
 ];
+
 var list = weeks.map(function (link) {
     return ("<li><a href=" + link.url + ">" + link.labels + "</a></li>");
   });
