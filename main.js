@@ -7,10 +7,10 @@ const weeks = [
         labels: "Week 2 notes",
         url: "week2/index.html"
     },
-    /*{
+    {
         labels: "Week 3 notes",
-        url: "week1/index.html"
-    }*/
+        url: "week3/index3.html"
+    }
 ];
 
 var list = weeks.map(function (link) {
