@@ -10,7 +10,43 @@ const weeks = [
     {
         labels: "Week 3 notes",
         url: "week3/index3.html"
+    },
+    {
+        labels: "Week 4 notes",
+        url: "week4/index4.html"
     }
+    /*{
+        labels: "Week 5 notes",
+        url: "week5/index5.html"
+    }
+    {
+        labels: "Week 6 notes",
+        url: "week6/index6.html"
+    }
+    {
+        labels: "Week 7 notes",
+        url: "week7/index7.html"
+    }
+    {
+        labels: "Week 8 notes",
+        url: "week8/index8.html"
+    }
+    {
+        labels: "Week 9 notes",
+        url: "week9/index9.html"
+    }
+    {
+        labels: "Week 10 notes",
+        url: "week10/index10.html"
+    }
+    {
+        labels: "Week 11 notes",
+        url: "week11/index11.html"
+    }
+    {
+        labels: "Week 12 notes",
+        url: "week12/index12.html"
+    }*/
 ];
 
 var list = weeks.map(function (link) {
