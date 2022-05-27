@@ -38,7 +38,7 @@ export default class Hikes {
     }
     //show a list of hikes in the parentElement
     showHikeList() {
-        
+
         const hikeListElement = document.getElementById("hikes");
         hikeListElement.innerHTML = "";
         renderHikeList(hikeList, hikeListElement);
@@ -52,7 +52,7 @@ export default class Hikes {
     // in order to show the details of a hike ontouchend we will need to attach a listener AFTER the list of hikes has been built. The function below does that.
     addHikeListener() {
         // We need to loop through the children of our list and attach a listener to each, remember though that children is a nodeList...not an array. So in order to use something like a forEach we need to convert it to an array.
-        
+
         /*const links = Array.from(document.querySelectorAll('li'));
         console.log(links);
         const de = links.map(link => link.textContent);
@@ -60,32 +60,32 @@ export default class Hikes {
         links.forEach(hike =>
             hike.addEventListener("click", this.showHikeList(hike.name)));
     */
-            var lists = document.getElementsByClassName('hikeStyles');
-            console.log(lists[1]);
-            for (var i = 0; i < lists.length; i++) {
-    
-              var children = lists[i].addEventListener('click', clickHandler);
-              
-            }
-            this.showOneHike(children);
+        var lists = document.getElementsByClassName('hikeStyles');
+        console.log(lists[1]);
+        for (var i = 0; i < lists.length; i++) {
 
-            function clickHandler(e) {
-                var elem, evt = e ? e : event;
-                if (evt.srcElement) {
-                  elem = evt.srcElement;
-                } else if (evt.target) {
-                  elem = evt.target;
-                }
-              
-                // Filter out li tags
-                if (elem && ('LI' !== elem.tagName.toUpperCase())) {
-                  return true;
-                }
-              
+            var children = lists[i].addEventListener('click', clickHandler);
+
+        }
+        this.showOneHike(children);
+
+        function clickHandler(e) {
+            var elem, evt = e ? e : event;
+            if (evt.srcElement) {
+                elem = evt.srcElement;
+            } else if (evt.target) {
+                elem = evt.target;
+            }
+
+            // Filter out li tags
+            if (elem && ('LI' !== elem.tagName.toUpperCase())) {
                 return true;
             }
-         
+
+            return true;
         }
+
+    }
     buildBackButton() {
         const backButton = document.createElement("button");
 
@@ -100,6 +100,7 @@ function renderHikeList(hikes, parent) {
     });
     renderOneHikeLight(hike);
 }
+
 function renderOneHikeLight(hike) {
     const item = document.createElement("li");
     item.innerHTML = ` <h2>${hike.name}</h2>
@@ -116,9 +117,10 @@ function renderOneHikeLight(hike) {
   </div>`;
     return item;
 }
+
 function renderOneHikeFull(hike) {
 
-    
+
     elem.innerHTML = ` <h2>${hike.name}</h2>
   <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
   <div class="information">
