@@ -30,11 +30,11 @@ const weeks = [
     {
         labels: "Week 8 notes",
         url: "week8/index8.html"
-    }/*
+    },
     {
         labels: "Week 9 notes",
         url: "week9/index9.html"
-    }
+    }/*
     {
         labels: "Week 10 notes",
         url: "week10/index10.html"
