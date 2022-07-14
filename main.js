@@ -42,12 +42,11 @@ const weeks = [
     {
         labels: "Week 11 notes",
         url: "week11/index11.html"
-    }
-    /*
+    },
     {
-        labels: "Week 12 notes",
-        url: "week12/index12.html"
-    }*/
+        labels: "Week 13 Final Project",
+        url: "finalProject/index.html"
+    }
 ];
 
 var list = weeks.map(function (link) {
