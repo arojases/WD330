@@ -1,5 +1,4 @@
 import {
-    darkMode,
     dtUpdate,
     getLocation,
     inputCheck,
@@ -22,7 +21,6 @@ const apiWeather = document.getElementById('weather');
 const apiAirQuality = document.getElementById('air');
 const apiForecast = document.getElementById('forecast');
 const UVindex = document.getElementById('uv');
-const dark = document.getElementById('dark');
 
 // DOM - output
 const outputDiv = document.getElementById('output');
@@ -62,10 +60,6 @@ apiForecast.addEventListener('click', () => {
 // (oninput event) checks zip code for numeric and undefined values then gives feedback
 zipInput.addEventListener('input', () => {
     inputCheck()
-}, false);
-// (onclick event) when the dark element is clicked the function will toggle the body class
-dark.addEventListener('click', () => {
-    darkMode()
 }, false);
 
 // functions for listeners that handle fetch and display for each button press
