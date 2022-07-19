@@ -1,7 +1,7 @@
 import {Auth} from './auth.js';
 export {makeRequest, posts}
   // Server Address
-const baseURL = 'http://127.0.0.1:3000/';
+const baseURL = 'http://127.0.0.1:5500/';
 // helper function to make an http request with fetch.
 // returns a json object
 async function makeRequest(url, method = 'GET', body = null, token = null) {
